@@ -12,7 +12,7 @@ if (!searchParams.has("desktop")) {
 
 var desktop = searchParams.get("desktop"); // Get the params values
 
-$("h1").text(`Desktop ${desktop}`); // Show the Desktop in h1
+$("#desktop").text(`${desktop}`); // Show the Desktop in h1
 
 refreshSocket(); // Functions call
 

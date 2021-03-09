@@ -5,32 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Programa de Colas</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Task App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
 </head>
 
 <body class="container">
-    <h1>Programa de Colas</h1>
+    <h1 class="my-2">Tickets App </h1>
 
-    <div class="row">
-        <div class="col-6">
+    <div class="row md">
+        <div class="col-md-6">
+            <a class="btn btn-primary mb-2" href="public.html"> <i class="bi bi-tv"></i> Public Screen</a>
 
-            <a class="btn btn-primary" href="public.html">Pantalla publica</a>
-            <a class="btn btn-secondary" href="new-ticket.html">Crear Tickets</a>
+            <a class="btn btn-secondary mb-2" href="new-ticket.html"> <i class="bi bi-plus"></i> Create Tickets</a>
+            <a class="btn btn-light mb-2" id="reset"> <i class="bi bi-cup-straw"></i> Reset Tickets</a>
 
         </div>
 
-        <div class="col-6">
+        <div class="col-md-6">
             <form action="desktop.html">
-                <input name="desktop" type="number" class="form-control" placeholder="Escritorio" autofocus required>
-                <br>
-                <button type="submit" class="btn btn-primary">
-                    Ingresar
+                <input name="desktop" type="number" class="form-control" placeholder="Desktop" autofocus required>
+
+                <button type="submit" class="btn btn-primary mt-3">
+                    Attend
                 </button>
             </form>
         </div>
     </div>
+
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="js/socket.index.js"></script>
 
 </body>
 

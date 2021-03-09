@@ -5,20 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Programa de Colas</title>
+    <title>Task App</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
 </head>
 
 <body class="container">
-    <h1>Escritorio</h1>
-    <h4>Atendiendo a <small>....</small></h4>
 
-    <button class="btn btn-primary">
-        Atender siguiente ticket
-    </button>
+    <p class="fs-1 fw-bold"> <i class="bi bi-tv-fill"></i> Desktop: <span id="desktop"></span> </p>
 
+
+    <h4 class="fw-medium">Attenting Ticket: <small class="fw-light">....</small></h4>
+    <div class="mt-4">
+        <button class="btn btn-primary">
+            Attend Next Ticket
+        </button>
+        <a href="/index.html">
+            <button class="btn btn-light">Go Home</button>
+        </a>
+    </div>
+    <footer class="container mt-4">
+
+
+        <a href="https://github.com/whoknowscode" class="text-dark py-3 " style="text-decoration: none;">
+            <i class="bi bi-github fs-5"></i>
+            <span class="fs-6">whoknowscode</span>
+        </a>
+
+        <a href="https://www.facebook.com/theluispxd/" class="text-dark py-3 " style="text-decoration: none;">
+            <i class="bi bi-facebook fs-5"></i>
+            <span class="fs-6">Luis Pernia</span>
+        </a>
+        <p class="text-dark mt-2 pb-3">All The Rights Reserved To <b> &copy;Luis Pernia</b> </p>
+
+    </footer>
     <script src="js/libs/jquery.min.js"></script>
     <script src="socket.io/socket.io.js"></script>
     <script src="js/socket.desktop.js"></script>

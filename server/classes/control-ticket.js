@@ -32,6 +32,8 @@ class TicketControl {
     return `Ticket ${this.last}`;
   }
 
+  resetTickets() {}
+
   attendTicket(desktop) {
     if (this.tickets.length <= 0) {
       return "Tickets Clean ✔";

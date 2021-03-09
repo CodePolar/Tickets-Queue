@@ -32,4 +32,13 @@ io.on("connection", (client) => {
     last: ticketControl.getLastTicket(),
     lastFour: ticketControl.getLastFour(),
   });
+
+  client.on("resetTickets", () => {
+    console.log("reset");
+    ticketControl.resetCount();
+
+    client.broadcast.emit("lastFour", {
+      lastFour: ticketControl.getLastFour(),
+    });
+  });
 });
